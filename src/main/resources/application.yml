@@ -2,10 +2,9 @@ server:
   port: 8888
 
 spring:
-  profiles:
-    active: native
   cloud:
     config:
       server:
-        native:
-          search-locations: /home/celk/microservice-floricultura-repo
+        git:
+          uri: https://github.com/oTalDoHud/microservico-floricultura-repo
+          search-paths: fornecedor
